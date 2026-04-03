@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmic Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <div class="hero">
+          <p class="eyebrow">Arcade Remix</p>
+          <h1>Cosmic Tic-Tac-Toe</h1>
+          <p class="tagline">
+            Duel the star-bot, chain your wins, and keep the galaxy from ending in a draw.
+          </p>
+        </div>
+
+        <div class="topbar">
+          <div class="stat">
+            <span class="stat-label">You</span>
+            <strong id="player-score">0</strong>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Star-Bot</span>
+            <strong id="cpu-score">0</strong>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Draws</span>
+            <strong id="draw-score">0</strong>
+          </div>
+        </div>
+
+        <div class="status-card">
+          <p id="turn-badge" class="turn-badge">Your turn</p>
+          <p id="status" class="status-text">Pick a square and start the match.</p>
+        </div>
+
+        <div id="board" class="board" role="grid" aria-label="Tic-tac-toe board"></div>
+
+        <div class="actions">
+          <button id="new-round-button" class="button button-primary" type="button">
+            New Round
+          </button>
+          <button id="reset-button" class="button" type="button">Reset Score</button>
+        </div>
+
+        <div class="tips">
+          <p><span>Tip:</span> You are X, the star-bot is O.</p>
+          <p><span>Goal:</span> Land three in a row before the bot blocks your vibe.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./src/game.js"></script>
+  </body>
+</html>

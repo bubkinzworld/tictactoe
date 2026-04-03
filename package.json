@@ -1,0 +1,8 @@
+{
+  "name": "fun-tic-tac-toe",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/tic-tac-toe-logic.test.mjs"
+  }
+}
